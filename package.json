@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node single.js",
-    "test": "ava --verbose"
+    "test": "nyc --reporter=html --reporter=text ava",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,8 @@
   },
   "devDependencies": {
     "ava": "^0.25.0",
+    "coveralls": "^3.0.2",
+    "nyc": "^13.1.0",
     "sinon": "^2.2.0"
   }
 }
