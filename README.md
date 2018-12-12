@@ -1,3 +1,17 @@
+# FTP Automator
+
+> This is a tool to automate the following print production process:
+* Download files from FTP and group into time-stamp contiguous "batches"
+* Merge each PDF file with its correspondingly named TIF file as output, if no TIF, simply use PDF as output
+* Verify counts of files in and files out
+* Upload output files to FTP
+* Send an email report on this process and its outcome
+* Archive files locally
+* Cleanup leftover files
+
+[![Build Status](https://travis-ci.com/danielbackus/ftpautomator.svg?branch=master)](https://travis-ci.com/danielbackus/ftpautomator)
+[![Coverage Status](https://coveralls.io/repos/github/danielbackus/ftpautomator/badge.svg?branch=master)](https://coveralls.io/github/danielbackus/ftpautomator?branch=master)
+
 ### How do I get set up? ###
 
 In order to deploy this to a development or production server, you will have to:
